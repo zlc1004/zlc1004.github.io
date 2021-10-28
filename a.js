@@ -35,6 +35,7 @@ function preload() { // preload() is load all the images
     yc = [loadImage('https://zlc1005.github.io/garbage/yc.jpg'), 'yc']// yc
     book = [loadImage('https://zlc1005.github.io/garbage/book.jpg'), 'book']// book
     Starbucks_cups = [loadImage('https://zlc1005.github.io/garbage/Starbucks_cups.jpg'), 'Starbucks_cups']// Starbucks_cups
+    Paper_Boxes = [loadImage('https://zlc1005.github.io/garbage/Paper_Boxes.jpg'), 'Paper_Boxes']// Paper_Boxes
     liii = [recy, kit, har, other]// set the list of all the images
 }
 imgxy = 100, 100// set the position of the image
@@ -61,6 +62,7 @@ function setup() { // setup() is set up the canvas
         [yc, kit, 500, 500],
         [book, recy, 500, 500]
         [Starbucks_cups, recy, 500, 400]
+        [Paper_Boxes, recy, 500, 500]
     ]
     scoreElem = createDiv()
     timer = createDiv()
