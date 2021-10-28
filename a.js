@@ -1,9 +1,10 @@
 
 $(function () {
     setTimeout(function(){ $('#spinner').fadeOut(); }, 5000);
-
 })
-
+$(function () {
+    setTimeout(function(){ $('#kcb').fadeOut(); }, 15000);
+})
 function preload() { // preload() is load all the images
     backgroundImg = loadImage("https://zlc1005.github.io/garbage/background.jpg")
     recy = createImg('https://zlc1005.github.io/garbage/a.bmp', 'alt')
@@ -67,6 +68,9 @@ function showText(element, text, x, y, color = 'white') { // showText(text, x, y
     element.style('color', color)// set the color of the div
     element.html(text)// set the text of the div
 }
+window.onbeforeunload = function(){ 
+    alert("Sure you want to quit?");
+}
 function clear_all() {// clear_all()
     background(backgroundImg)// set the background
     recy.size(60 * 2, 80 * 2)// set the size of recy
@@ -79,8 +83,9 @@ function clear_all() {// clear_all()
     other.position(817 - 60 * 2, 106 + 80 * 2)// set the position of other
 }
 function draw() {
-    showText(timer, hour() + ': ' + minute() + ':' + second(), 10, 20)// show the time// show the time
-    showText(scoreElem, 'Right:' + r + '&nbsp &nbsp Wrong:' + (w) + '&nbsp &nbspCorrectate:' + zql(r, d) + '%', 10, 40)// score and the correct rate
+    showText(timer, hour() + ': ' + minute() + ':' + second(), 0, 0)// show the time// show the time
+    showText(XYpos, 'x: ' + mouseX + 'y:' + mouseY, 0, 20)
+    showText(scoreElem, 'Right:' + r + '&nbsp &nbsp Wrong:' + (w) + '&nbsp &nbspCorrectate:' + zql(r, d) + '%', 0, 40)// score and the correct rate
     //imaa=choose(qu)// choose a value in the list
     play()// play the game
     //image(imaa[0][0],100,100,120,160)//item, x,y,w,h
