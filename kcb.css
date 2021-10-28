@@ -1,12 +1,12 @@
 #hcss{
     color: rgb(0, 0, 0);
     text-align: center; /* 位置居中 */
-    top: 100px;      /* 距离浏览器上边200px */
+    top: '30%' /* 距离浏览器上边200px */
 }
 #hscss{
     color: rgb(0, 0, 0);
     text-align: center; /* 位置居中 */
 }
 body{
-    background-color: #FFFFFE;
+    background-color: #FFFFEE;
 }
