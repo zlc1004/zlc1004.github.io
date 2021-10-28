@@ -56,7 +56,7 @@ function setup() { // setup() is set up the canvas
         [battle, recy, 500, 500],
         [light, har, 400, 500],
         [yytt, other, 500, 500],
-        [apple13maxpro, har, 500, 500],
+        [apple13maxpro, har, 500, 300],
         [yc, kit, 500, 500],
         [book, recy, 500, 500]
     ]
