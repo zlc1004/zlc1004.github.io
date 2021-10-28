@@ -79,9 +79,8 @@ function clear_all() {// clear_all()
     other.position(817 - 60 * 2, 106 + 80 * 2)// set the position of other
 }
 function draw() {
-    showText(timer, hour() + ': ' + minute() + ':' + second(), 0, 0)// show the time// show the time
-    showText(XYpos, 'x: ' + mouseX + 'y:' + mouseY, 0, 20)
-    showText(scoreElem, 'Right:' + r + '&nbsp &nbsp Wrong:' + (w) + '&nbsp &nbspCorrectate:' + zql(r, d) + '%', 0, 40)// score and the correct rate
+    showText(timer, hour() + ': ' + minute() + ':' + second(), 10, 20)// show the time// show the time
+    showText(scoreElem, 'Right:' + r + '&nbsp &nbsp Wrong:' + (w) + '&nbsp &nbspCorrectate:' + zql(r, d) + '%', 10, 40)// score and the correct rate
     //imaa=choose(qu)// choose a value in the list
     play()// play the game
     //image(imaa[0][0],100,100,120,160)//item, x,y,w,h
