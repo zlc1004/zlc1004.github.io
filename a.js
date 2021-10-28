@@ -31,6 +31,9 @@ function preload() { // preload() is load all the images
     battle = [loadImage('https://zlc1005.github.io/garbage/slsp.jpg'), 'battle']// battle
     light = [loadImage('https://zlc1005.github.io/garbage/dp.jpg'), 'light']// light
     yytt = [loadImage('https://zlc1005.github.io/garbage/yt.jpg'), 'yytt']// yytt
+    apple13maxpro = [loadImage('https://zlc1005.github.io/garbage/apple13maxpro.jpg'), 'apple13maxpro']// apple13maxpro
+    yc = [loadImage('https://zlc1005.github.io/garbage/yc.jpg'), 'yc']// yc
+    book = [loadImage('https://zlc1005.github.io/garbage/book.jpg'), 'book']// book
     liii = [recy, kit, har, other]// set the list of all the images
 }
 imgxy = 100, 100// set the position of the image
@@ -52,7 +55,10 @@ function setup() { // setup() is set up the canvas
         [paper, recy, 500, 500],
         [battle, recy, 500, 500],
         [light, har, 400, 500],
-        [yytt, other, 500, 500]
+        [yytt, other, 500, 500],
+        [apple13maxpro, har, 500, 500],
+        [yc, kit, 500, 500],
+        [book, recy, 500, 500]
     ]
     scoreElem = createDiv()
     timer = createDiv()
@@ -83,7 +89,8 @@ function clear_all() {// clear_all()
     other.position(817 - 60 * 2, 106 + 80 * 2)// set the position of other
 }
 function draw() {
-    showText(timer, hour() + ': ' + minute() + ':' + second(), 0, 30)// show the time// show the time
+    showText(timer, hour() + ': ' + minute() + ':' + second(), 0, 0)// show the time// show the time
+    showText(XYpos, 'x: ' + mouseX + 'y:' + mouseY, 0, 20)
     showText(scoreElem, 'Right:' + r + '&nbsp &nbsp Wrong:' + (w) + '&nbsp &nbspCorrectate:' + zql(r, d) + '%', 0, 40)// score and the correct rate
     //imaa=choose(qu)// choose a value in the list
     play()// play the game
