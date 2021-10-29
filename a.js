@@ -34,8 +34,8 @@ function preload() { // preload() is load all the images
     apple13maxpro = [loadImage('https://zlc1005.github.io/garbage/apple13maxpro.jpg'), 'apple13maxpro']// apple13maxpro
     yc = [loadImage('https://zlc1005.github.io/garbage/yc.jpg'), 'yc']// yc
     book = [loadImage('https://zlc1005.github.io/garbage/book.jpg'), 'book']// book
-    Starbuckscups = [loadImage('https://zlc1005.github.io/garbage/Starbucks_cups.jpg'), 'Starbucks_cups']// Starbucks_cups
-    PaperBoxes = [loadImage('https://zlc1005.github.io/garbage/Paper_Boxes.jpg'), 'Paper_Boxes']// Paper_Boxes
+    Starbucks_cups = [loadImage('https://zlc1005.github.io/garbage/Starbucks_cups.jpg'), 'Starbucks_cups']// Starbucks_cups
+    Paper_Boxes = [loadImage('https://zlc1005.github.io/garbage/Paper_Boxes.jpg'), 'Paper_Boxes']// Paper_Boxes
     liii = [recy, kit, har, other]// set the list of all the images
 }
 imgxy = 100, 100// set the position of the image
@@ -58,11 +58,11 @@ function setup() { // setup() is set up the canvas
         [battle, recy, 500, 500],
         [light, har, 400, 500],
         [yytt, other, 500, 500],
-        [apple13maxpro, har, 500, 300],
+        [apple13maxpro, har, 300, 500],
         [yc, kit, 500, 500],
         [book, recy, 500, 500],
-        [Starbuckscups, recy, 500, 400],
-        [PaperBoxes, recy, 500, 500]
+        [Starbucks_cups, recy, 400, 500],
+        [Paper_Boxes, recy, 500, 500]
     ]
     scoreElem = createDiv()
     timer = createDiv()
