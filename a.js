@@ -3,6 +3,9 @@ $(function () {
     setTimeout(function(){ $('#spinner').fadeOut(); }, 5000);
 })
 $(function () {
+    setTimeout(function(){ $('#dmy').fadeOut(); }, 10000);
+})
+$(function () {
     setTimeout(function(){ $('#kcb').fadeOut(); }, 15000);
 })
 function preload() { // preload() is load all the images
