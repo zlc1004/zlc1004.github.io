@@ -3,7 +3,7 @@ $(function () {
     setTimeout(function(){ $('#spinner').fadeOut(); }, 5000);
 })
 $(function () {
-    setTimeout(function(){ $('#dmy').fadeOut(); }, 10000);
+    setTimeout(function(){ $('#dmy').fadeOut(); }, 8000);
 })
 $(function () {
     setTimeout(function(){ $('#kcb').fadeOut(); }, 15000);
