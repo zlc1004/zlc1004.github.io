@@ -4,10 +4,12 @@
     top: 40% ; /* 距离浏览器上边距离 */
     left: 40% ; /* 距离浏览器左边距离 */
 }
-#hscss{
-    color: rgb(0, 0, 0);
-    text-align: center; /* 位置居中 */
+
+@font-face{
+    font-family: 'kcb';/* 字体名称 */
+    src: url('https://zlc1005.github.io/kcb.ttf');/* 字体文件路径 */
 }
+
 body{
     background-color: #FFFFEE;
 }
