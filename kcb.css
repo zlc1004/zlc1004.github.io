@@ -1,7 +1,8 @@
 #hcss{
     color: rgb(0, 0, 0);
     text-align: center; /* 位置居中 */
-    top: '30%' /* 距离浏览器上边200px */
+    top: 40% ; /* 距离浏览器上边距离 */
+    left: 40% ; /* 距离浏览器左边距离 */
 }
 #hscss{
     color: rgb(0, 0, 0);
